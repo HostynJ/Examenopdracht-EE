@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacteer ons</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="producten.html">Producten</a></li>
+                <li><a href="contact.html" class="active" current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contacteer ons</h1>
+    </header>
+
+    <main>
+        <article class="contact-formulier">
+            <section>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <fieldset>
+                        <legend id="contact-formulier">Contactformulier</legend>
+
+                        <div>
+                            <label for="voornaam">Voornaam:</label>
+                            <input type="text" id="voornaam" name="voornaam" required>
+                        </div>
+
+                        <div>
+                            <label for="familienaam">Familienaam:</label>
+                            <input type="text" id="familienaam" name="familienaam" required>
+                        </div>
+
+                        <div>
+                            <label for="adres">Adres:</label>
+                            <input type="text" id="adres" name="adres">
+                        </div>
+
+                        <div>
+                            <label for="telefoon">Telefoonnummer:</label>
+                            <input type="tel" id="telefoon" name="telefoon">
+                        </div>
+
+                        <div>
+                            <label for="email">E-mailadres:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label for="reden">Reden van contact:</label>
+                            <select id="reden" name="reden">
+                                <option value="bestelling">Bestelling</option>
+                                <option value="info">Informatie</option>
+                                <option value="klacht">Klacht</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <legend>Geslacht</legend>
+                            <input type="radio" name="geslacht" value="man" id="man">
+                            <label for="man">Man</label>
+                            <input type="radio" name="geslacht" value="vrouw" id="vrouw">
+                            <label for="vrouw">Vrouw</label>
+                        </div>
+
+                        <div>
+                            <label for="vraag">Uw vraag:</label><br>
+                            <textarea id="vraag" name="vraag" rows="5" cols="30" required></textarea>
+                        </div>
+
+                        <div>
+                            <button type="submit">Verzend</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <section class="disclaimer">
+            <p>
+                Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en
+                hebben
+                louter educatieve doeleinden.
+            </p>
+        </section>
+        <section class="copyright">
+            <p>© Hostyn Jari – WFB@Home – Howest</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,2 +1,1 @@
-# Examenopdracht-EE
-Examenopdracht - Webshop 
+Niet volledig kunnen afwerken

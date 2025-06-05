@@ -1,0 +1,388 @@
+/* Navigatiebalk */
+.navbar {
+  background-color: #c0571c;
+  padding: 0.7em 1em;
+  box-shadow: 0 3px 6px black;
+  margin-bottom: 2em;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.navbar a {
+  color: black;
+  font-weight: 700;
+  font-size: 1.1em;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+}
+
+.navbar :hover {
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #5b3218;
+}
+
+/* Chatknop vast in hoek */
+.klikken {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c0571c;
+  color: #000;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px black;
+}
+
+.klikken:hover {
+  background-color: #ffa300;
+}
+
+/* Logo */
+
+.logo {
+  text-align: center;
+  margin: 1em 0;
+  font-family: 'Georgia', serif;
+}
+
+.logo-titel {
+  font-size: 2em;
+  color: #5b3218;
+}
+
+.logo-title strong {
+  font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+  color: #c0571c;
+}
+
+.motto {
+  font-size: 1em;
+  color: #7c4a2c;
+  font-style: italic;
+}
+
+
+/* Algemene instellingen */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffdf8;
+  color: #4a2f1b;
+  line-height: 1.6;
+}
+
+/* Kopteksten */
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #5b3218;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #5b3218;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #5b3218;
+  margin-top: 0;
+}
+
+/* a-element */
+a {
+  color: #c0571c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a64f17;
+  text-decoration: underline;
+}
+
+/* Header Index */
+.bakkerij {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 0 1em;
+}
+
+/* Main secties */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em 3em;
+}
+
+/* Sectie titels */
+section h2 {
+  border-bottom: 2px solid #c0571c;
+  padding-bottom: 0.25em;
+  margin-bottom: 1em;
+}
+
+/* Bedrijf sectie */
+.over-ons p {
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+/* Spotlight */
+.nieuws-artikel {
+  background-color: #f9e0c7;
+  padding: 1em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nieuws-artikel h2 {
+  margin-bottom: 0.5em;
+}
+
+.nieuws-artikel a {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+.nieuws-artikel .artikel-datum {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 1em;
+  display: block;
+}
+
+/* Categorieën lijst */
+.categorieën ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.categorieën li a {
+  background-color: #c0571c;
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.categorieën li a:hover {
+  background-color: #a64f17;
+}
+
+/* Vergelijkingstabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 8px black;
+}
+
+thead {
+  background-color: #c0571c;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f1e9;
+}
+
+/* Webshop pagina */
+/* Flex container voor producten */
+.product-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+/* Individueel product */
+.product {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px black;
+  flex: 1 1 220px;
+  max-width: 220px;
+  padding: 1em;
+  text-align: center;
+}
+
+.product h3 {
+  margin: 0.7em 0;
+  color: #5b3218;
+}
+
+.product p {
+  font-weight: bold;
+  color: #c0571c;
+  font-size: 1.1em;
+}
+
+.product-afbeelding {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+
+
+/* Contactpagina */
+form {
+  max-width: 500px;
+  margin: 0 auto 3em;
+  background-color: #f9e0c7;
+  padding: 1.5em 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px black;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #5b3218;
+}
+
+label {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  font-weight: 600;
+  color: #4a2f1b;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6em;
+  border: 1.5px solid #c0571c;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
+
+button[type="submit"] {
+  background-color: #c0571c;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  margin-top: 1.5em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+button[type="submit"]:hover {
+  background-color: #a64f17;
+}
+
+button[type="reset"] {
+  background-color: #5b3218;
+  margin-left: 1em;
+}
+
+button[type="reset"]:hover {
+  background-color: #3e260f;
+}
+
+/* Footer */
+footer {
+  background-color: #f9e0c7;
+  color: #5c3b1e;
+  text-align: center;
+  padding: 1em 1em 2em;
+  font-size: 0.9em;
+  margin-top: 3em;
+  border-top: 1px solid #c0571c;
+}
+
+footer .disclaimer {
+  margin: 0 0 0.5em;
+  font-style: italic;
+}
+
+footer .copyright {
+  margin: 0;
+  font-weight: 700;
+}
+
+
+/* Responsive Grid Layout */
+@media screen and (max-width: 420px) {
+
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px auto 50px;
+    grid-template-areas: "over-ons" "categorieën";
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: 50px 50px auto 50px;
+    grid-template-areas: "over-ons" "categorieën";
+  }
+}
